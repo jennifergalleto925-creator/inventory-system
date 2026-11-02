@@ -1,0 +1,60 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    background: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+.card.wide { max-width: 800px; }
+h1 { margin: 0 0 4px; font-size: 24px; color: #1e3c72; }
+p.sub { margin: 0 0 20px; color: #666; font-size: 14px; }
+label { display: block; margin: 12px 0 4px; font-size: 14px; color: #333; }
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+input:focus { outline: none; border-color: #2a5298; }
+button, .btn {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 11px;
+    background: #2a5298;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+button:hover, .btn:hover { background: #1e3c72; }
+.alert { padding: 10px 12px; border-radius: 6px; margin-bottom: 12px; font-size: 14px; }
+.error { background: #fdecea; color: #b71c1c; }
+.success { background: #e8f5e9; color: #1b5e20; }
+.link { margin-top: 16px; text-align: center; font-size: 14px; }
+.link a { color: #2a5298; }
+table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14px; }
+th, td { padding: 8px; border-bottom: 1px solid #eee; text-align: left; }
+.btn-sm {
+    width: auto; margin: 0 2px; padding: 5px 10px; font-size: 13px;
+    display: inline-block; border-radius: 4px; color: #fff; text-decoration: none;
+}
+.green { background: #2e7d32; }
+.red { background: #c62828; }
+.nav { display: flex; justify-content: space-between; align-items: center; }
+.nav a { width: auto; margin: 0; padding: 8px 14px; font-size: 14px; background: #c62828; }
